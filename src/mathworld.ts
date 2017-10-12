@@ -5,9 +5,9 @@ export class MathWorld {
         if (num == 0 ) {
             return 1
         }
-        while (num-- > 2) {
-            console.log(num)
-            temp *=num; 
+        while (num > 1) {
+            console.log(num);
+            temp *=num--; 
         }
         return temp;
       

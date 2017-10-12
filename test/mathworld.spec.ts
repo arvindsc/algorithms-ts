@@ -1,5 +1,5 @@
 
-import { MathWorld } from "../src/mathfworld";
+import { MathWorld } from "../src/mathworld";
 import * as using from 'jasmine-data-provider';
 
 describe('MathWorld', () => {

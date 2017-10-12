@@ -1,0 +1,34 @@
+{
+  "name": "algorithms-ts",
+  "version": "1.0.0",
+  "description": "TypeScript Implementation of Algorithms",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint {src,test}/**/*.ts --format stylish",
+    "test": "nyc mocha",
+    "test:watch": "mocha -w --reporter min"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.6.0",
+    "jasmine": "^2.8.0",
+    "jasmine-core": "^2.8.0",
+    "jasmine-data-provider": "^2.2.0",
+    "jasmine-ts": "^0.2.1",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvindsc/algorithms-ts.git"
+  },
+  "author": "ArvindSC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arvindsc/algorithms-ts/issues"
+  },
+  "homepage": "https://github.com/arvindsc/algorithms-ts#readme"
+}

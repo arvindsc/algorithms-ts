@@ -1,5 +1,4 @@
-import { BracketMatcher, MatchingPair } from '../src/bracket-matcher';
-import * as using from 'jasmine-data-provider';
+import { BracketMatcher, MatchingPair } from './bracket-matcher';
 describe('BracketMatcher', () => {
     it('should initialize matching pairs',()=>{
         const matchingPair = new MatchingPair('(',')');

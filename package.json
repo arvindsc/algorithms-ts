@@ -8,17 +8,21 @@
   },
   "scripts": {
     "build": "tsc",
-    "lint": "tslint {src,test}/**/*.ts --format stylish",
-    "test": "nyc mocha",
-    "test:watch": "mocha -w --reporter min"
+    "test": "jest --config=jest.config.json --watch",
+    "lint": "tslint -c ",
+    "format": "prettier --write \"src/**/*.ts\""
   },
   "devDependencies": {
-    "@types/jasmine": "^2.6.0",
-    "jasmine": "^2.8.0",
-    "jasmine-core": "^2.8.0",
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@types/jasmine": "^3.5.10",
+    "babel-jest": "^26.0.1",
     "jasmine-data-provider": "^2.2.0",
-    "jasmine-ts": "^0.2.1",
+    "prettier": "^2.0.5",
     "tslint": "^5.7.0",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "^2.5.2"
   },
   "repository": {

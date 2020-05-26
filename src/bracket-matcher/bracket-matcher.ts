@@ -3,16 +3,16 @@ export class BracketMatcher {
   constructor(public matchingPairs: MatchingPair[]) {
     this.pairs = matchingPairs;
   }
-  validatePair(input: string): string {       
+  validatePair(input: string): string {
     let pair = input.split(""); // ([})
- 
+
     if (pair.length % 2 !== 0) {
-      return 'NO';
+      return "NO";
     }
 
-    for (var k = 0; k < pair.length/2; k++) {
+    for (var k = 0; k < pair.length / 2; k++) {
       let isValid = "NO";
- 
+
       for (let i = 0; i < this.pairs.length; i++) {
         if (
           pair[k] === this.pairs[i].openingBracket &&
